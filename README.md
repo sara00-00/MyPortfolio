@@ -1,7 +1,5 @@
 # Sara Alsalem's Portfolio Website
 
-![Portfolio Website Screenshot](https://github.com/sara00-00/MyPortfolio/raw/main/OUTPUT.png)
-
 ## Overview
 This is the personal portfolio website of Sara Alsalem, a Frontend Developer. The website showcases  About Me,projects, and experience in a visually appealing format.
 
@@ -17,3 +15,8 @@ This is the personal portfolio website of Sara Alsalem, a Frontend Developer. Th
 - JavaScript
 - [Font Awesome] for icons
 - [Flaticon] for animated icons
+
+  ##OUTPUT
+
+![Portfolio Website Screenshot](https://github.com/sara00-00/MyPortfolio/raw/main/OUTPUT.png)
+
