@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <canvas id="bubble"></canvas>
+    </div>
+
+    <!-- 1: HEADER -->
+    <header class="header">
+      <a href="#" class="logo"><span>Sara Alsalem</span></a>
+      <ul class="nav-links">
+        <li><a href="#Summary">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <a href="https://github.com/sara00-00" target="_blank">
+        <button class="visit-btn">Visit Github</button>
+      </a>
+    </header>
+
+    <!-- 2: ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <img src="logo.png" alt="Sara Alsalem Logo" />
+        <div class="info-box">
+          <div class="text">
+            <h3>Hello, I'm</h3>
+            <h1>Sara Alsalem</h1>
+            <span class="shine">Frontend Developer</span>
+          </div>
+          <div class="btn-group">
+            <button
+              class="btn"
+              onclick="window.open('Sara_Alsalem_resume.pdf')"
+            >
+              Download CV
+            </button>
+            <a href="#contact">
+              <button class="btn">Contact Info</button>
+            </a>
+          </div>
+          <div class="socials">
+            <a
+              href="https://github.com/sara00-00"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/public-profile/settings"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 2: SUMMARY SECTION -->
+    <section id="Summary" class="fade-in">
+      <h2 class="section-title">About Me</h2>
+           
+      <div class="Summary-info">
+               <img src="Graduation.gif" alt="Graduation Image" />
+
+        <div class="Summary-grid">
+          <div class="Summary-grid-card">
+            <h3 class="major">
+              <span class="lang-content active"
+                >Information Technology Graduate</span
+              >
+            </h3>
+            <p class="date">
+              <span class="lang-content active"
+                >Bachelor's in Information Technology | Princess Nourah
+                University | 2025</span
+              >
+            </p>
+            
+              </p>
+            <p>
+              <span class="lang-content active"
+                >A recent Information Technology graduate and junior front-end developer 
+                dedicated to leveraging technology to drive innovation and create meaningful web solutions. 
+                I have hands-on experience with Java, SQL, Angular, and Spring Boot, 
+                focusing on enhancing user experiences and addressing real-world challenges. 
+                Passionate about continuous learning and collaboration,
+                 I believe diverse perspectives lead to the best outcomes. 
+                 I am excited to connect with opportunities where I can further develop my skills and 
+                 contribute positively to the tech industry.</span
+              >
+            </p>
+               
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3: EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-info">
+        <div class="grid">
+          <div class="grid-card">
+            <span>COOP Training</span>
+            <h3>General Organization for Social Insurance (GOSI)</h3>
+            <h3 class="month ">January 2025 – April 2025</h3>
+            <ol class="experience-list">
+              <li>
+                Enhanced organizational and planning abilities while
+                collaborating with diverse teams.
+              </li>
+              <li>
+                Developed front-end interfaces and integrated back-end
+                functionalities as a Full Stack Developer.
+              </li>
+              <li>
+                Conducted software testing on user stories, identifying and
+                reporting bugs to ensure quality.
+              </li>
+              <li>
+                Gained experience in Java, SQL, and database management, as well
+                as frameworks such as Angular and Spring Boot, and tools like
+                GitLab and Postman.
+              </li>
+            </ol>
+          </div>
+        </div>
+       <img src="experience.gif" alt="Experience Image" />
+      </div>
+    </section>
+
+    <!-- 4: PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="Liver Transplant System.png" alt="" />
+          <h3>Liver Transplant System</h3>
+          <div class="btn-group">
+            <div class="btn learn-more" id="open-modal-1">Learn More</div>
+          </div>
+        </div>
+        <!-- Modal for Project One -->
+        <div id="popup-modal-1" class="modal">
+          <div class="modal-content">
+            <span class="close" id="close-modal-1">&times;</span>
+            <h2>This project aims to:</h2>
+            <ol class="circle-list">
+              <li>
+                Build a database system for managing liver transplant operations
+                efficiently.
+              </li>
+              <li>
+                Store and connect data for doctors, donors, recipients, livers,
+                and surgeries.
+              </li>
+              <li>
+                Ensure accuracy through constraints, triggers, and validation
+                logic.
+              </li>
+              <li>
+                Support medical decisions by checking compatibility and tracking
+                surgery outcomes.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="Iris Recognition Systems.png" alt="" />
+          <h3>Iris Recognition Systems</h3>
+          <div class="btn-group">
+            <div class="btn learn-more" id="open-modal-2">Learn More</div>
+          </div>
+        </div>
+        <!-- Modal for Project Two -->
+        <div id="popup-modal-2" class="modal">
+          <div class="modal-content">
+            <span class="close" id="close-modal-2">&times;</span>
+            <h2>This project aims to:</h2>
+            <ol class="circle-list">
+              <li>
+                Implement a biometric system that uses iris patterns for secure
+                and accurate identity verification.
+              </li>
+              <li>
+                Preprocess the eye image using grayscale conversion, histogram
+                equalization, and edge detection.
+              </li>
+              <li>
+                Detect the iris and pupil using circle detection algorithms and
+                extract their features.
+              </li>
+              <li>
+                Match extracted iris features against a sample database using
+                Euclidean distance.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="LiverCancerDetection Systems.png" alt="" />
+          <h3>Liver Cancer Detection Systems</h3>
+          <div class="btn-group">
+            <div class="btn learn-more" id="open-modal-3">Learn More</div>
+          </div>
+        </div>
+        <!-- Modal for Project Three -->
+        <div id="popup-modal-3" class="modal">
+          <div class="modal-content">
+            <span class="close" id="close-modal-3">&times;</span>
+            <h2>This project aims to:</h2>
+            <ol class="circle-list">
+              <li>
+                Develop an optimized deep neural network model for accurate
+                liver cancer diagnosis.
+              </li>
+              <li>
+                Enhance early detection capabilities through innovative
+                bio-inspired optimization techniques.
+              </li>
+              <li>
+                Leverage powerful tools like Python and deep learning frameworks
+                to build a state-of-the-art diagnostic system.
+              </li>
+              <li>
+                Set new standards in medical imaging by improving accuracy,
+                reducing diagnosis time, and increasing reliability compared to
+                traditional methods.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5: CONTACT & FOOTER SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-solid fa-envelope icon contact-icon email-icon"></i>
+          <p>
+            <a href="mailto:saramajedalsalem@gmail.com"
+              >saramajedalsalem@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-github icon contact-icon"></i>
+          <p><a href="https://github.com/sara00-00">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <ul>
+        <li><a href="#Summary">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">
+        Copyright &#169; 2025 Sara Alsalem. All Rights Reserved.
+      </p>
+    </footer> 
+
+    <script src="script.js"></script>
+  </body>
+</html>
